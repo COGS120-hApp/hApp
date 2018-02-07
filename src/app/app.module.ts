@@ -36,11 +36,31 @@ import {
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { EventComponent } from './event/event.component';
+import { ReviewComponent } from './review/review.component';
+import { NavigateComponent } from './navigate/navigate.component';
+import { DestinationComponent } from './destination/destination.component';
+import { SocialShareComponent } from './social-share/social-share.component';
+import { PicSelectComponent } from './pic-select/pic-select.component';
+import { EventEditComponent } from './event-edit/event-edit.component';
+import { SearchParamComponent } from './search-param/search-param.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    LoginComponent,
+    EventComponent,
+    ReviewComponent,
+    NavigateComponent,
+    DestinationComponent,
+    SocialShareComponent,
+    PicSelectComponent,
+    EventEditComponent,
+    SearchParamComponent
   ],
   imports: [
     BrowserModule,

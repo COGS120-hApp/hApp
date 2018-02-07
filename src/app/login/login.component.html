@@ -1,11 +1,19 @@
-<mat-toolbar><span class="title">hApp</span></mat-toolbar>
+<mat-toolbar>
+  <span class="title">hApp</span>
+</mat-toolbar>
 
 <div class="button-group">
   <div class="button-row">
-      <button mat-raised-button color="primary">Facebook</button>
+    <button mat-raised-button (click)="onLogin()">Facebook</button>
   </div>
 
   <div class="button-row">
-      <button mat-raised-button color="primary">Google+</button>
+    <button mat-raised-button (click)="onLogin()">Google+</button>
+  </div>
+
+  <div class="button-row">
+    <button mat-raised-button>
+      <i class="material-icons">history</i>
+    </button>
   </div>
 </div>

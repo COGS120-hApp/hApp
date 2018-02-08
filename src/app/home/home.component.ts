@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit {
   }
 
   searchForEvents() {
+    this.router.navigate(['event']);
   }
 
 }

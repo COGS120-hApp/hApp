@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  isAuthenticated(isAuth : boolean){
-    if(isAuth === true)
-      console.log("User successfully authenticated");
-    else
-      console.log("Authentication failed");
+  private authenticated : boolean = false;
+
+  constructor(private route: ActivatedRoute, private router: Router){
+
   }
 }

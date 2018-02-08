@@ -1,4 +1,5 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AuthenticatorService } from '../authenticator.service';
 
 @Component({
   selector: 'app-login',
@@ -7,16 +8,13 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  // this event is emitted when the user successfully authenticates
-  @Output() loggedIn : EventEmitter<boolean> = new EventEmitter<boolean>();
-
-  constructor() { }
+  constructor(private authService: AuthenticatorService) { }
 
   ngOnInit() {
   }
 
   onLogin() : void {
-    this.loggedIn.emit(true);
+    this.authService.navigateToHome();
   }
 
 }

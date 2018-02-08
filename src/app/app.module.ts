@@ -47,6 +47,10 @@ import { PicSelectComponent } from './pic-select/pic-select.component';
 import { EventEditComponent } from './event-edit/event-edit.component';
 import { SearchParamComponent } from './search-param/search-param.component';
 
+import { AuthenticatorService } from './authenticator.service'
+
+import { routing } from './app.routes';
+
 
 @NgModule({
   declarations: [
@@ -86,7 +90,7 @@ import { SearchParamComponent } from './search-param/search-param.component';
     MatRadioModule,
     MatRippleModule,
     MatSelectModule,
-    MatSidenavModule,
+    MatSidenavModule, 
     MatSliderModule,
     MatSlideToggleModule,
     MatSnackBarModule,
@@ -95,9 +99,12 @@ import { SearchParamComponent } from './search-param/search-param.component';
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatStepperModule
+    MatStepperModule,
+    routing
   ],
-  providers: [],
+  providers: [
+    AuthenticatorService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

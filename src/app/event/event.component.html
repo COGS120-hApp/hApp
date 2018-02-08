@@ -1,7 +1,7 @@
 <mat-toolbar>
-  <span><i class="material-icons">home</i></span>
-    <span class="title">hApp</span>
-    <span>filter</span>
+  <span><button mat-button color="white"><i class="material-icons">home</i></button></span>
+  <span class="title">hApp</span>
+  <span><button mat-button color="white">filter</button></span>
 </mat-toolbar>
 
 <mat-card class="example-card">
@@ -22,8 +22,12 @@
   <div>
     <div class="button-row">
         <button mat-button color="white"><i class="material-icons">arrow_back</i></button>
-        <button mat-fab color="white"><i class="material-icons">close</i></button>
-        <button mat-fab color="white"><i class="material-icons">favorite</i></button>
+        <div style="padding-right:50px">
+            <button mat-fab color="white"><i class="material-icons">close</i></button>
+        </div>
+        <div>
+            <button mat-fab color="white"><i class="material-icons">favorite</i></button>
+        </div>
         <button mat-button><i class="material-icons">more_horiz</i></button>
     </div>
   </div>

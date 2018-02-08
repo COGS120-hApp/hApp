@@ -47,7 +47,7 @@ import { PicSelectComponent } from './pic-select/pic-select.component';
 import { EventEditComponent } from './event-edit/event-edit.component';
 import { SearchParamComponent } from './search-param/search-param.component';
 
-import { AuthenticatorService } from './authenticator.service'
+import { AuthenticatorService } from './services/authenticator.service'
 
 import { routing } from './app.routes';
 

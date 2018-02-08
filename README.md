@@ -10,4 +10,4 @@ install modules with:
 
 to deploy: 
 
-```npm start```
+```ng serve```
